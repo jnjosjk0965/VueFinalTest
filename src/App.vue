@@ -1,4 +1,5 @@
 <template>
+  <button type="button" class="btn btn-primary">Primary</button>
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
