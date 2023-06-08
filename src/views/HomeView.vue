@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="relative">
+    <HeaderComp/>
+    <ContentComp :MainImage="MainImage"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HeaderComp from '../components/HeaderComp.vue'
+import ContentComp from '@/components/ContentComp.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
+    HeaderComp,
+    ContentComp
+  },
+  data () {
+    return {
+      MainImage: '/images/mount_Fuji.jpg'
+    }
   }
 }
 </script>
