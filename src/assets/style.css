@@ -1,6 +1,7 @@
 @import './fonts.css';
 *{
     border: 0px solid;
+    font-size: 16px;
 }
 
 ul,li{
@@ -19,6 +20,28 @@ nav a {
     -moz-osx-font-smoothing: grayscale;
   }
 
+.title {
+  font-family: 'Black Han Sans', sans-serif, Helvetica, Arial;
+  font-size: 3.5rem;
+  color: #f56a6a;
+}
+.content {
+  color: #2c3e50;
+}
+.myColor {
+  color: #f56a6a;
+}
+.myBackground {
+  background-color: rgb(253, 242, 241);
+}
 .relative {
     position: relative;
+}
+.c-flex {
+  display: flex;
+  flex-direction: column;
+}
+.r-flex {
+  display: flex;
+  flex-direction: row;
 }

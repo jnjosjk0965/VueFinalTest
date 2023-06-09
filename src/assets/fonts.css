@@ -3,3 +3,8 @@
     font-style: normal;
     src: url('@/assets/fonts/NotoSansKR/NotoSansKR-Regular.otf');
 }
+@font-face {
+    font-family: 'Black Han Sans';
+    font-style: normal;
+    src: url('@/assets/fonts/BlackHanSans/BlackHanSans-Regular.ttf');
+}

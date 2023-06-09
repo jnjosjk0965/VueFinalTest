@@ -1,24 +1,21 @@
 <template>
   <div class="relative">
-    <HeaderComp/>
-    <ContentComp :MainImage="MainImage"/>
+    <HeaderComp  :MainImage="MainImage"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HeaderComp from '../components/HeaderComp.vue'
-import ContentComp from '@/components/ContentComp.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HeaderComp,
-    ContentComp
+    HeaderComp
   },
   data () {
     return {
-      MainImage: '/images/mount_Fuji.jpg'
+      MainImage: '/images/Tokyo/mount_Fuji_forMain.jpg'
     }
   }
 }

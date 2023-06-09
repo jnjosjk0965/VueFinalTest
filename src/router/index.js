@@ -39,6 +39,22 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackPrefetch: true */ '../views/HokkaidoView.vue')
+  },
+  {
+    path: '/conv',
+    name: 'conversation',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackPrefetch: true */ '../views/JapanConversation.vue')
+  },
+  {
+    path: '/plan',
+    name: 'plan',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackPrefetch: true */ '../views/BuildPlanView.vue')
   }
 ]
 
