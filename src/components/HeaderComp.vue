@@ -2,7 +2,7 @@
     <header  class="d-flex flex-wrap justify-content-center" >
         <div id="header-nav" class="d-flex">
             <!--홈 버튼-->
-            <router-link to="/" class="d-flex align-items-center mb-md-0 me-md-auto ml-0 text-dark text-decoration-none relative">
+            <router-link to="/" class="relative">
                 <img src="@/assets/logo_long.png" style="width:180px">
             </router-link>
             <!--네비게이션-->

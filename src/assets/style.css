@@ -1,7 +1,7 @@
 @import './fonts.css';
 *{
     border: 0px solid;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 ul,li{
@@ -18,8 +18,24 @@ nav a {
     font-family: 'Noto Sans KR', sans-serif, Helvetica, Arial;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-
+}
+#content-wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
+  font-size: 30px;
+}
+.choice-layout {
+  display: inline-flex;
+  margin: 0px 0px -8px;
+  list-style: none;
+  padding: 0px;
+  flex-flow: column wrap;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  max-width: 100%;
+  min-width: 168px;
+}
 .title {
   font-family: 'Black Han Sans', sans-serif, Helvetica, Arial;
   font-size: 3.5rem;
@@ -44,4 +60,56 @@ nav a {
 .r-flex {
   display: flex;
   flex-direction: row;
+}
+.radio-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: var(--sampler-theme-border-radius);
+  background-color: rgba(81, 73, 57, 0.1);
+  box-shadow: rgba(81, 73, 57, 0.6) 0px 0px 0px 1px inset;
+  color: rgb(81, 73, 57);
+  max-width: 100%;
+  height: inherit;
+  min-height: 40px;
+  outline: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  transition-duration: 0.1s;
+  transition-property: background-color, color, border-color, opacity, box-shadow;
+  transition-timing-function: ease-out;
+  width: 100%;
+  word-break: break-word;
+  cursor: pointer;
+  opacity: 1;
+}
+.radio-button:hover {
+  background-color: rgba(81, 73, 57, 0.3);
+}
+.tag {
+  margin: 4px 8px 0 8px;
+  position: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 2px;
+  width: 24px;
+  min-width: 22px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: sans-serif;
+  border-color: rgba(81, 73, 57, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(81, 73, 57);
+}
+.choice {
+  width: 100%;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  flex: 1 1 0%;
+  text-align: left;
+  word-break: break-word;
 }

@@ -2,7 +2,7 @@
   <section class="my-5">
     <div class="container c-flex myBackground rounded">
       <!--탭 메뉴-->
-      <ul class="r-flex gap-1" style="padding: 0;margin: 0;">
+      <ul class="r-flex gap-1 ps-4" style="padding: 0;margin: 0;">
         <li class="tab_link" :class="{ current: currentTab === 'food'}" @click="this.currentTab = 'food'">먹을거리</li>
         <li class="tab_link" :class="{ current: currentTab === 'sight'}" @click="this.currentTab = 'sight'">관광지</li>
       </ul>
